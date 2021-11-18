@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit1-Assignment-Refactor-Attempt", "Unit1-Assignment-Refactor-Attempt\Unit1-Assignment-Refactor-Attempt.csproj", "{81B8C4D7-A727-43F2-B407-70830F887BC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81B8C4D7-A727-43F2-B407-70830F887BC5}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{81B8C4D7-A727-43F2-B407-70830F887BC5}.Debug|anycpu.Build.0 = Debug|anycpu
+		{81B8C4D7-A727-43F2-B407-70830F887BC5}.Release|anycpu.ActiveCfg = Release|anycpu
+		{81B8C4D7-A727-43F2-B407-70830F887BC5}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62094102-8656-4821-960B-7DB639C0E660}
+	EndGlobalSection
+EndGlobal
