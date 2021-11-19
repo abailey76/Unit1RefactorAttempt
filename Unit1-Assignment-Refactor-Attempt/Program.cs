@@ -32,9 +32,9 @@ namespace Unit1AssignmentRefactorAttempt
 
             List<string> userAnswers = new List<string>();
 
-            
 
-            for (int i=0; i <= 4; i++)
+
+            for (int i = 0; i <= 4; i++)
             {
                 Console.WriteLine(questionList[i]);
 
@@ -47,11 +47,47 @@ namespace Unit1AssignmentRefactorAttempt
 
             }
 
-            foreach (string userAnswer in userAnswers)
+            
+            int correct = 1;
+            string status = "";
+
+            Console.WriteLine("Results for Candidate: " + userName);
+
+            for (int i = 0; i <= 4; i++)
             {
-                Console.WriteLine(userAnswer);
+
+                Console.WriteLine("\nQuestion {0}", questionList[i]);
+                
+                Console.WriteLine("\nYou answered: {0}", userAnswers[i]);
+                
+                Console.WriteLine("\nCorrect Answer: {0}", quizAnswers[i]);
+
+                if (userAnswers[i] == quizAnswers[i])
+                {
+                    correct++;
+                }
+
+            }
+
+            int grade = correct * 100 / 5;
+
+            Console.WriteLine($"\nYou got {correct} questions correct!\n");
+            Console.WriteLine($"That's a score of {grade}.");
+
+            if (grade >= 80)
+
+            {
+                Console.WriteLine("\nCongratulations!! You PASSED the quiz.");
+            }
+
+            else
+
+            {
+                Console.WriteLine("\nAssignment FAILED. Please try again.");
             }
 
         }
+
     }
+
 }
