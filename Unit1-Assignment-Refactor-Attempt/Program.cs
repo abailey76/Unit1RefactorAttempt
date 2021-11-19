@@ -7,7 +7,6 @@ namespace Unit1AssignmentRefactorAttempt
     {
         public static void Main(string[] args)
         {
-            
 
             Console.WriteLine("Please enter your name: ");
             string userName = Console.ReadLine();
@@ -31,15 +30,26 @@ namespace Unit1AssignmentRefactorAttempt
                 "3"
             };
 
-            List<string> userAnswers = new List<string>
-            {
+            List<string> userAnswers = new List<string>();
 
-            };
+            
 
-            for (int i = 0; i < questionList.Count; i++)
+            for (int i=0; i <= 4; i++)
             {
-                Console.WriteLine("Question #{i}:" + questionList[i]);
-               
+                Console.WriteLine(questionList[i]);
+
+                string input = Console.ReadLine();
+
+                userAnswers.Add(input);
+
+                Console.WriteLine("\nYou answered: {0}", userAnswers[i]);
+                Console.WriteLine("\nCorrect Answer:  {0}\n", quizAnswers[i]);
+
+            }
+
+            foreach (string userAnswer in userAnswers)
+            {
+                Console.WriteLine(userAnswer);
             }
 
         }
